@@ -1,0 +1,224 @@
+@media screen and (max-width: 600px) {
+    #logo {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        display: block;
+    }
+    #busqueda {
+        width: 90%;
+        margin: auto;
+    }
+    #buscar {
+        width: 80%;
+    }
+    .columna {
+        margin: 5px auto;
+        text-align: center;
+    }
+    li {
+        font-size: 22px;
+        display: none;
+    }
+    #nombre-menu {
+        display: block;
+    }
+    /* --------------------------- ESPECIFICO--------------------------------------------*/
+    label {
+        font-size: 22px;
+        width: 50%;
+    }
+    input {
+        font-size: 20px;
+        width: 100%;
+    }
+    #caracteristicas {}
+}
+
+@media screen and (min-width: 601px) {
+    #logo {
+        width: 25%;
+        float: left;
+    }
+    #busqueda {
+        width: 75%;
+        float: left;
+        margin-top: 120px;
+    }
+    #buscar {
+        width: 50%;
+    }
+    #iniciar-sesion,
+    #registrarse {
+        width: 20%;
+    }
+    .columna {
+        display: inline;
+    }
+    li {
+        font-size: 26px;
+    }
+    /* --------------------------- ESPECIFICO--------------------------------------------*/
+    label {
+        font-size: 24px;
+    }
+    input {
+        font-size: 22px;
+        height: 32px;
+        width: 50%;
+    }
+    #caracteristicas .foto-publicacion {
+        width: 55%;
+    }
+    #caracteristicas #mitad-caracteristicas {
+        width: 30%;
+    }
+}
+
+* {
+    font-family: 'K2D', sans-serif;
+}
+
+body {
+    background-color: #353535;
+}
+
+ul {
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+li {
+    list-style: none;
+    border: 1px solid #353535;
+    color: #353535;
+}
+
+label {
+    color: #353535;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#contenedor button {
+    background-color: #CCDAD1;
+    color: #353535;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #353535;
+}
+
+#mi-pregunta {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#caracteristicas .foto-publicacion,
+#caracteristicas #mitad-caracteristicas {
+    display: inline-block;
+    text-align: center;
+}
+
+#nombre,
+#precio {
+    padding: 10px;
+}
+
+input {
+    border-radius: 10px;
+}
+
+#contenido label {
+    color: #CCDAD1;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px;
+    text-align: justify;
+    padding: 10px;
+}
+
+#descripcion {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#caracteristicas {
+    margin: 15px auto;
+    width: 90%;
+}
+
+#descripcion .descripcion-titulo {
+    color: #353535;
+}
+
+.show {
+    display: block;
+}
+
+.titulo,
+#descripcion {
+    background-color: #A4B622;
+}
+
+#boton-busqueda {
+    margin: 0%;
+}
+
+
+/* Contenedor de la grid*/
+
+#contenedor {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: auto;
+    border-radius: 10px;
+    min-height: 100vh;
+    width: 98%;
+    margin: auto;
+}
+
+
+/* Encabezado (logo y titulo) y pie (algún link externo) */
+
+#encabezado,
+#pie,
+#contenido {
+    clear: both;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+#encabezado {
+    background-color: #353535;
+}
+
+#contenedor,
+#pie {
+    background-color: #CCDAD1;
+}
+
+#menu {
+    border-radius: 10px;
+}
+
+#contenido {
+    background-color: #353535;
+    border-radius: 10px;
+    overflow: auto;
+    margin: auto;
+    width: 95%;
+}
+
+#boton-buscar {
+    width: 30px;
+}

@@ -1,0 +1,287 @@
+@media screen and (max-width: 600px) {
+    #logo {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+        display: block;
+    }
+    h1 {
+        width: 100%;
+        margin: auto;
+    }
+    li {
+        font-size: 22px;
+        display: none;
+    }
+    #nombre-menu {
+        display: block;
+    }
+    /* Menu (todos los enlaces) */
+    #menu {
+        clear: both;
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    /* Contenido (esto es donde cambia)*/
+    #contenido {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        width: 85%;
+        margin: auto;
+        padding: 15px;
+    }
+    /* --------------------------- ESPECIFICO--------------------------------------------*/
+    label,
+    legend {
+        font-size: 22px;
+        display: block;
+    }
+    input {
+        font-size: 20px;
+        border-radius: 10px;
+        width: 95%;
+    }
+    i {
+        padding: 5px;
+    }
+    #datos,
+    #foto {
+        width: 85%;
+        margin: auto;
+    }
+    #foto-perfil {
+        width: 95%;
+        height: 95%;
+        display: block;
+        margin: 5px;
+    }
+    .publicaciones {
+        width: 40%;
+    }
+    .foto-publicacion-calificar,
+    .calificar-botones {
+        width: 90%;
+    }
+    .calificar-botones input,
+    #busqueda-usuarios input {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    #logo {
+        width: 30%;
+        float: left;
+    }
+    h1 {
+        width: 50%;
+        float: left;
+    }
+    li {
+        font-size: 26px;
+    }
+    #nombre-menu {
+        display: none;
+    }
+    /* Menu (todos los enlaces) */
+    #menu {
+        clear: both;
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+    /* Contenido (esto es donde cambia)*/
+    #contenido {
+        grid-column-start: 7;
+        grid-column-end: -1;
+        width: 90%;
+        margin: auto;
+        height: 90%;
+    }
+    /* --------------------------- ESPECIFICO--------------------------------------------*/
+    label,
+    legend {
+        font-size: 26px;
+        display: block;
+    }
+    input {
+        font-size: 24px;
+        border-radius: 10px;
+        width: 80%;
+    }
+    i {
+        padding: 10px;
+    }
+    #datos,
+    #foto {
+        width: 45%;
+        padding: 10px;
+        margin: 15px auto;
+        float: left;
+    }
+    #foto-perfil {
+        width: 95%;
+        height: 95%;
+    }
+    .datos {
+        margin: 25px auto;
+        width: 80%;
+        text-align: center;
+        padding: 10px;
+    }
+    .publicaciones {
+        width: 20%;
+    }
+    .foto-publicacion-calificar {
+        width: 40%;
+    }
+    .calificar-botones {
+        width: 50%;
+    }
+    .calificar-botones input,
+    #busqueda-usuarios input {
+        width: 60%;
+    }
+}
+
+* {
+    font-family: 'K2D', sans-serif;
+}
+
+body {
+    background-color: #353535;
+}
+
+h1 {
+    font-size: 58px;
+    color: #A4B622;
+    text-align: center;
+}
+
+ul {
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+li {
+    list-style: none;
+    border: 1px solid #353535;
+    color: #353535;
+}
+
+label,
+legend,
+.lista-usuarios {
+    color: #CCDAD1;
+}
+
+legend {
+    padding: 10px;
+    text-align: center;
+}
+
+input > .button-act {
+    background-color: #A4B622;
+    font-size: 22px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #353535;
+    color: #353535;
+    margin: 15px;
+}
+
+textarea {
+    width: 90%;
+}
+
+.calificar-botones {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+.publicaciones-calificar {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.titulo {
+    background-color: #A4B622;
+}
+
+.icono {
+    widows: 40px;
+    margin: auto;
+}
+
+.foto-publicacion {
+    width: 80%;
+    margin: auto;
+    height: 200px;
+    text-align: center;
+}
+
+.publicaciones {
+    border: #CCDAD1 1px solid;
+    background-color: #A4B622;
+    margin: 2%;
+    height: 240px;
+    text-align: center;
+    display: inline-block;
+}
+
+.show {
+    display: block;
+}
+
+#busqueda-usuarios label,
+.lista-usuarios label {
+    display: inline;
+}
+
+
+/* Contenedor de la grid*/
+
+#contenedor {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: auto;
+    border-radius: 10px;
+    min-height: 100vh;
+    width: 98%;
+    margin: auto;
+}
+
+
+/* Encabezado (logo y titulo) y pie (algún link externo) */
+
+#encabezado,
+#pie {
+    clear: both;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+#encabezado {
+    background-color: #353535;
+}
+
+#contenedor,
+#pie {
+    background-color: #CCDAD1;
+}
+
+#menu {
+    border-radius: 10px;
+}
+
+#contenido {
+    background-color: #353535;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: auto;
+}

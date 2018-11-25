@@ -1,0 +1,107 @@
+@media screen and (max-width: 600px) {
+    #logo {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    #contenido {
+        width: 95%;
+    }
+    h1 {
+        margin: auto;
+        text-align: center;
+    }
+    #registro {
+        margin: auto;
+        width: 95%;
+        text-align: center;
+    }
+    #registro input {
+        display: block;
+        width: 80%;
+    }
+    #registro label {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    #logo {
+        width: 30%;
+        text-align: left;
+        float: left;
+        margin-bottom: 40px;
+    }
+    h1 {
+        float: right;
+        width: 60%;
+        padding: 20px;
+    }
+    #contenido {
+        clear: both;
+        width: 40%;
+    }
+    #registro {
+        margin: auto;
+        width: 95%;
+        text-align: center;
+    }
+}
+
+* {
+    font-family: 'K2D', sans-serif;
+}
+
+body {
+    background-color: #353535;
+}
+
+#contenido {
+    background-color: #CCDAD1;
+    margin: 3% 3% 0 3%;
+    border-radius: 10px;
+    height: 100%;
+    margin: 20px auto;
+    padding: 5px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 45px;
+    color: #A4B622;
+}
+
+label {
+    font-size: 24px;
+}
+
+div {
+    margin: 5px 0;
+}
+
+#regis {
+    margin: auto;
+    background-color: #A4B622;
+    border: #353535 solid 1px;
+    color: #353535;
+    font-size: 24px;
+    border-radius: 10px;
+    min-width: 20%;
+    height: 50px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+input {
+    font-size: 22px;
+    margin: auto;
+    border-radius: 10px;
+    display: block;
+    width: 60%;
+}
+
+label {
+    width: 40%;
+    text-align: left;
+    color: #353535;
+}
